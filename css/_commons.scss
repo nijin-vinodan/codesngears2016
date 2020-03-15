@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: $primaryFont;
+}
+
+html{
+    background-color: $themeBackground; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to left, $themeBackground ,$grad2);
+    background-image: url(../img/pattern.png), linear-gradient(to left, $themeBackground, $grad4, $grad1 , $themeBackground);
+}
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+html, body, input, button{
+    font: $primaryFont;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.isMobile{
+     display: none;
+     @media screen and (max-width: $mobile){
+        display: block;
+     }
+}
+.isTablet{
+    @media screen and (max-width: $tablet){
+        .block{display: block;}
+        .inline{display: inline;}
+    }
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+.isDesktop{
+    &.inline{
+        display: inline;
+    }
+    &.block{
+        display: block;
+    }
+    @media screen and (max-width: $ipad){
+        display: none;
+    }
+}

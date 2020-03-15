@@ -1,0 +1,96 @@
+#cngSchedule{
+    float: left;
+    width: 33%;
+    color: $themeWhite;
+    position: relative;
+    margin-top: 175px;
+    ul{
+        li{
+            margin: 20px 0;
+            .time{
+                font-size: 14px;
+                float: left;
+                width: 60px;
+                padding:20px 0;
+                text-align: center;
+            }
+            .date{
+                width: 50px;
+                height: 60px;
+                background: #25303B;
+                float: left;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+                span{
+                    display:block;
+                    font-size:10px;
+                }
+            }
+            .eventName{
+                float:left;
+                padding: 10px;
+                margin: 8px 0;
+                width: calc(100% - 150px);
+                background: $themeGreen;
+                border-bottom-right-radius: 15px;
+                text-transform: uppercase;
+                font-size: 14px;
+                box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+                @media screen and (max-width: $ipad){
+                    width: calc(100% - 110px); 
+                }
+            }
+            &:nth-child(3){
+                .eventName{ background: $themeDarkOrange}
+            }
+            &:nth-child(2){
+                .eventName{ background: $themeOrange}
+            }
+            &:nth-child(4){
+                .eventName{ background: $themeRed}
+            }
+        }
+    } 
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin: -20px 0 0 -27%;
+        width: 3px;
+        height: 97%;
+        background: #506B86;
+        z-index: -1;
+        @media screen and (max-width: $tablet){
+            margin: 0;
+            left: 85px;
+        }
+    }
+    &:after{
+        position: absolute;
+        content: 'SCHEDULE 2016';
+        top: -70px;
+        right: -3%;
+        font-size: 30px;
+        color: #fff;
+        border-bottom: 3px solid #506B86;
+        width: 80%;
+        text-align: left;
+        @media screen and (max-width: $tablet){
+           border-bottom:0;
+           width: 100%;
+           text-align: right;
+           right:0;
+        }
+    }
+    
+    @media screen and (max-width: $ipad){
+        width: 40%;
+    }
+    @media screen and (max-width: $tablet){
+        @include clearFloat;
+        margin-top: 100px;
+    }
+}

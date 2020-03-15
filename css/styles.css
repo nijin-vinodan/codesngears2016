@@ -1,0 +1,1377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: Monda; }
+
+html {
+  background-color: #262e2b;
+  /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(to left, #262e2b, #092350);
+  background-image: url(../img/pattern.png), linear-gradient(to left, #262e2b, #221, #111, #262e2b); }
+
+body {
+  height: 100%;
+  width: 100%; }
+
+html, body, input, button {
+  font: Monda; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.clearfix {
+  clear: both; }
+
+ul {
+  list-style: none; }
+
+.isMobile {
+  display: none; }
+  @media screen and (max-width: 500px) {
+    .isMobile {
+      display: block; } }
+
+@media screen and (max-width: 800px) {
+  .isTablet .block {
+    display: block; }
+  .isTablet .inline {
+    display: inline; } }
+@media screen and (max-width: 500px) {
+  .isTablet {
+    display: none; } }
+
+.isDesktop.inline {
+  display: inline; }
+.isDesktop.block {
+  display: block; }
+@media screen and (max-width: 1024px) {
+  .isDesktop {
+    display: none; } }
+
+#hexagon_background_svg {
+  width: 100%;
+  height: 1000px;
+  position: absolute; }
+
+.container {
+  height: 100%;
+  width: 85%;
+  max-width: 1280px;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  /** ---------- START :: HEADER --------- **/
+  /** ---------- END :: HEADER --------- **/
+  /** ---------- START :: SECTION --------- **/
+  /** ---------- END :: SECTION --------- **/ }
+  @media screen and (max-width: 800px) {
+    .container {
+      width: 90%; } }
+  .container header {
+    position: relative;
+    padding: 15px 0; }
+    .container header .sirius-logo {
+      width: 150px;
+      height: 40px;
+      background: url(../img/siriusLogo.png) center no-repeat;
+      background-size: 100%;
+      position: absolute;
+      right: 0; }
+      @media screen and (max-width: 500px) {
+        .container header .sirius-logo {
+          margin: 10px auto;
+          display: block;
+          position: static; } }
+    .container header .logo {
+      position: absolute;
+      right: 45%;
+      top: 100px;
+      width: 216px;
+      height: 178px;
+      margin-right: -89px; }
+      @media screen and (max-width: 500px) {
+        .container header .logo {
+          margin: 10px auto;
+          display: block;
+          position: static; } }
+  .container section.tileSection .grids {
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+    .container section.tileSection .grids.details .box {
+      float: left;
+      width: 32%;
+      margin-left: 2%;
+      height: 600px;
+      position: relative;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      color: #fff;
+      padding: 40px; }
+      @media screen and (max-width: 800px) {
+        .container section.tileSection .grids.details .box {
+          width: 100%;
+          float: none;
+          margin-left: 0;
+          margin-bottom: 10px;
+          min-height: 300px;
+          height: auto; } }
+      .container section.tileSection .grids.details .box:first-child {
+        margin-left: 0; }
+      .container section.tileSection .grids.details .box#guests {
+        background: #30563f url(../img/guests.png) left bottom no-repeat;
+        background-size: 400px; }
+        .container section.tileSection .grids.details .box#guests ul li {
+          margin-bottom: 20px; }
+          .container section.tileSection .grids.details .box#guests ul li .pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            float: left;
+            background: #ccc;
+            margin: 8px 0;
+            border: 1px solid #fff; }
+          .container section.tileSection .grids.details .box#guests ul li .detail {
+            width: calc(100% - 60px);
+            float: right; }
+            .container section.tileSection .grids.details .box#guests ul li .detail p.name {
+              text-transform: uppercase; }
+            .container section.tileSection .grids.details .box#guests ul li .detail p.design {
+              font-size: 12px; }
+            .container section.tileSection .grids.details .box#guests ul li .detail p.firm {
+              font-size: 11px; }
+      .container section.tileSection .grids.details .box#themes {
+        background: #c3933c url(../img/themes.png) bottom right no-repeat;
+        background-size: 250px;
+        color: #fff; }
+        .container section.tileSection .grids.details .box#themes ul {
+          font-size: 13px; }
+          .container section.tileSection .grids.details .box#themes ul li {
+            text-align: right;
+            width: 50%;
+            float: left;
+            line-height: 16px;
+            text-transform: uppercase;
+            padding: 10px;
+            margin: 10px 0; }
+            .container section.tileSection .grids.details .box#themes ul li i {
+              font-size: 50px;
+              display: block;
+              padding-bottom: 10px; }
+            @media screen and (max-width: 900px) and (min-width: 500px) {
+              .container section.tileSection .grids.details .box#themes ul li {
+                height: 150px;
+                width: 33%; } }
+            @media screen and (max-width: 500px) {
+              .container section.tileSection .grids.details .box#themes ul li {
+                height: 150px;
+                width: 50%; } }
+      .container section.tileSection .grids.details .box#about {
+        background: #8f2a2d url(../img/about.png) bottom right no-repeat;
+        background-size: 350px; }
+      .container section.tileSection .grids.details .box .customTitle {
+        font-size: 34px;
+        text-align: right;
+        margin-bottom: 15px; }
+      @media screen and (max-width: 1024px) {
+        .container section.tileSection .grids.details .box {
+          padding: 20px; } }
+    .container section.tileSection .grids .textItem {
+      font-size: 13px;
+      text-align: justify;
+      font-family: Lato;
+      overflow-y: auto; }
+      .container section.tileSection .grids .textItem p {
+        margin-bottom: 20px;
+        line-height: 18px; }
+
+/** ---------- START :: FOOTER --------- **/
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #8f2a2d;
+  color: #fff;
+  z-index: 4; }
+  footer .copyright {
+    width: 60%;
+    float: left; }
+    @media screen and (max-width: 800px) {
+      footer .copyright {
+        width: 100%;
+        float: none; } }
+    footer .copyright p {
+      padding-left: 10%;
+      font-size: 0.7em;
+      line-height: 40px;
+      letter-spacing: 1px; }
+      @media screen and (max-width: 800px) {
+        footer .copyright p {
+          padding-left: 0;
+          text-align: center; } }
+  footer .social {
+    width: 40%;
+    float: right;
+    font-size: 0.8em; }
+    footer .social i {
+      font-size: 1.2em; }
+    footer .social .number, footer .social .mail {
+      width: 30%;
+      background-color: #be5734; }
+      @media screen and (max-width: 800px) {
+        footer .social .number, footer .social .mail {
+          width: 60%;
+          float: left;
+          display: block; } }
+    footer .social .number {
+      background: #c3933c; }
+      @media screen and (max-width: 800px) {
+        footer .social .number {
+          width: 40%; } }
+    footer .social .location {
+      background-color: #30563f;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        footer .social .location {
+          width: 100%; } }
+    footer .social .facebook {
+      background-color: #3D5B94;
+      width: 10%; }
+      @media screen and (max-width: 800px) {
+        footer .social .facebook {
+          width: 15%; } }
+    footer .social .tweet {
+      background-color: #3DACDD;
+      width: 10%; }
+      @media screen and (max-width: 800px) {
+        footer .social .tweet {
+          width: 15%; } }
+    @media screen and (max-width: 800px) {
+      footer .social {
+        width: 100%;
+        float: none; } }
+    footer .social a {
+      float: left;
+      line-height: 40px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      -moz-transition: all, 0.3s;
+      -o-transition: all, 0.3s;
+      -webkit-transition: all, 0.3s;
+      transition: all, 0.3s; }
+    footer .social a:hover {
+      background-color: #222;
+      -moz-transition: all, 0.3s;
+      -o-transition: all, 0.3s;
+      -webkit-transition: all, 0.3s;
+      transition: all, 0.3s; }
+
+/** ---------- END :: FOOTER --------- **/
+section#timeline {
+  width: 66%;
+  margin: 200px 0 20px;
+  position: relative;
+  float: right; }
+  section#timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: -135px 0 0 -3px;
+    width: 3px;
+    height: 118.1%;
+    background: #506B86; }
+    @media screen and (max-width: 800px) {
+      section#timeline:before {
+        height: 85%;
+        margin-top: 0; } }
+    @media screen and (max-width: 500px) {
+      section#timeline:before {
+        margin: 0;
+        right: 30px;
+        left: auto;
+        height: 95%; } }
+  section#timeline article {
+    width: 100%;
+    margin: -100px 0 25px 0;
+    position: relative; }
+    section#timeline article:after {
+      content: '';
+      display: block;
+      clear: both; }
+    @media screen and (max-width: 500px) {
+      section#timeline article {
+        margin: 0 0 10px 0; } }
+  section#timeline:after {
+    position: absolute;
+    content: 'TIMELINE';
+    top: -184px;
+    right: 0px;
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 3px solid #506B86;
+    width: 50%;
+    text-align: right; }
+    @media screen and (max-width: 800px) {
+      section#timeline:after {
+        width: 100%;
+        border-bottom: 0;
+        top: -70px; } }
+  @media screen and (max-width: 1024px) {
+    section#timeline {
+      width: 55%; } }
+  @media screen and (max-width: 800px) {
+    section#timeline {
+      width: 100%;
+      float: none; } }
+  @media screen and (max-width: 500px) {
+    section#timeline {
+      width: 100%;
+      float: none;
+      margin: 100px 0 20px; } }
+
+section#timeline article div.inner {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  min-height: 150px;
+  padding: 15px;
+  color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  font-size: 11px; }
+  @media screen and (max-width: 500px) {
+    section#timeline article div.inner {
+      width: 75%; } }
+
+section#timeline article div.inner span.date {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  text-transform: uppercase;
+  background: #25303B;
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  @media screen and (max-width: 500px) {
+    section#timeline article div.inner span.date {
+      right: 0;
+      left: auto; } }
+
+section#timeline article div.inner span.date span {
+  display: block;
+  text-align: center;
+  font-size: 12px; }
+  section#timeline article div.inner span.date span.month {
+    font-size: 18px; }
+
+section#timeline article div.inner h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  line-height: 22px;
+  font-size: 18px; }
+  section#timeline article div.inner h2:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: rotate(-45deg); }
+
+section#timeline article div.inner h3 {
+  margin-bottom: 15px;
+  font-weight: 200; }
+section#timeline article div.inner ul li {
+  padding-left: 20px;
+  position: relative; }
+  section#timeline article div.inner ul li:before {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    content: '\f0a4';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit; }
+
+section#timeline article:nth-child(2n+2) div.inner {
+  float: right; }
+  @media screen and (max-width: 500px) {
+    section#timeline article:nth-child(2n+2) div.inner {
+      float: left; } }
+
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -25px; }
+  @media screen and (max-width: 500px) {
+    section#timeline article:nth-child(2n+2) div.inner h2:after {
+      left: auto; } }
+
+section#timeline article:nth-child(1) div.inner {
+  background: #30563f; }
+
+section#timeline article:nth-child(1) div.inner h2:after {
+  background: #30563f; }
+
+section#timeline article:nth-child(2) div.inner {
+  background: #8f2a2d; }
+
+section#timeline article:nth-child(2) div.inner h2:after {
+  background: #8f2a2d; }
+
+section#timeline article:nth-child(3) div.inner {
+  background: #c3933c; }
+
+section#timeline article:nth-child(3) div.inner h2:after {
+  background: #c3933c; }
+
+section#timeline article:nth-child(4) div.inner {
+  background: #be5734; }
+
+section#timeline article:nth-child(4) div.inner h2:after {
+  background: #be5734; }
+
+section#timeline article:nth-child(5) div.inner {
+  background: #884F31; }
+
+section#timeline article:nth-child(5) div.inner h2:after {
+  background: #884F31; }
+
+section#timeline article:nth-child(7) div.inner {
+  background: #4E4433; }
+
+section#timeline article:nth-child(7) div.inner h2:after {
+  background: #4E4433; }
+
+section#timeline article:nth-child(6) div.inner {
+  background: #B5676D; }
+
+section#timeline article:nth-child(6) div.inner h2:after {
+  background: #B5676D; }
+
+#cngSchedule {
+  float: left;
+  width: 33%;
+  color: #fff;
+  position: relative;
+  margin-top: 175px; }
+  #cngSchedule ul li {
+    margin: 20px 0; }
+    #cngSchedule ul li .time {
+      font-size: 14px;
+      float: left;
+      width: 60px;
+      padding: 20px 0;
+      text-align: center; }
+    #cngSchedule ul li .date {
+      width: 50px;
+      height: 60px;
+      background: #25303B;
+      float: left;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+      #cngSchedule ul li .date span {
+        display: block;
+        font-size: 10px; }
+    #cngSchedule ul li .eventName {
+      float: left;
+      padding: 10px;
+      margin: 8px 0;
+      width: calc(100% - 150px);
+      background: #30563f;
+      border-bottom-right-radius: 15px;
+      text-transform: uppercase;
+      font-size: 14px;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+      @media screen and (max-width: 1024px) {
+        #cngSchedule ul li .eventName {
+          width: calc(100% - 110px); } }
+    #cngSchedule ul li:nth-child(3) .eventName {
+      background: #be5734; }
+    #cngSchedule ul li:nth-child(2) .eventName {
+      background: #c3933c; }
+    #cngSchedule ul li:nth-child(4) .eventName {
+      background: #8f2a2d; }
+  #cngSchedule:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: -20px 0 0 -27%;
+    width: 3px;
+    height: 97%;
+    background: #506B86;
+    z-index: -1; }
+    @media screen and (max-width: 800px) {
+      #cngSchedule:before {
+        margin: 0;
+        left: 85px; } }
+  #cngSchedule:after {
+    position: absolute;
+    content: 'SCHEDULE 2016';
+    top: -70px;
+    right: -3%;
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 3px solid #506B86;
+    width: 80%;
+    text-align: left; }
+    @media screen and (max-width: 800px) {
+      #cngSchedule:after {
+        border-bottom: 0;
+        width: 100%;
+        text-align: right;
+        right: 0; } }
+  @media screen and (max-width: 1024px) {
+    #cngSchedule {
+      width: 40%; } }
+  @media screen and (max-width: 800px) {
+    #cngSchedule {
+      width: 100%;
+      float: none;
+      margin-top: 100px; } }
+
+.cngPromo {
+  position: relative;
+  height: 439px;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 800px) {
+    .cngPromo {
+      margin-bottom: 90px; } }
+  @media screen and (max-width: 500px) {
+    .cngPromo {
+      margin-bottom: 10px;
+      height: auto; } }
+  .cngPromo .windmillSection {
+    float: left;
+    width: 432px; }
+    .cngPromo .windmillSection .windmill {
+      width: 150px;
+      height: 200px;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 0; }
+    .cngPromo .windmillSection .windmillinner {
+      width: 100px;
+      height: 200px;
+      background: #30563f;
+      position: absolute;
+      margin-left: 75px;
+      bottom: 40px; }
+    .cngPromo .windmillSection .windmillinner:before {
+      content: "";
+      width: 50px;
+      height: 70px;
+      background: #222;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      position: absolute;
+      margin-left: 25px;
+      z-index: 9;
+      bottom: 0; }
+    .cngPromo .windmillSection .windmill:before {
+      content: "";
+      width: 300px;
+      height: 50px;
+      background: #30563f;
+      position: absolute;
+      margin-top: -50px;
+      margin-left: -25px; }
+    .cngPromo .windmillSection .windmill:after {
+      content: "";
+      width: 130px;
+      height: 65px;
+      background: #30563f;
+      position: absolute;
+      margin-top: -75px;
+      margin-left: 60px; }
+    .cngPromo .windmillSection .chevron {
+      position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 200px; }
+    .cngPromo .windmillSection .chevron:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 65px;
+      width: 90px;
+      background: #30563f;
+      margin-left: -25px;
+      margin-top: -70px;
+      -webkit-transform: skew(0deg, -7deg);
+      -moz-transform: skew(0deg, -7deg);
+      -ms-transform: skew(0deg, -7deg);
+      -o-transform: skew(0deg, -7deg);
+      transform: skew(0deg, -7deg); }
+    .cngPromo .windmillSection .chevron:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 65px;
+      width: 90px;
+      background: #30563f;
+      margin-left: 190px;
+      margin-top: -70px;
+      -webkit-transform: skew(0deg, 7deg);
+      -moz-transform: skew(0deg, 7deg);
+      -ms-transform: skew(0deg, 7deg);
+      -o-transform: skew(0deg, 7deg);
+      transform: skew(0deg, 7deg); }
+    .cngPromo .windmillSection .fan {
+      width: 25px;
+      height: 25px;
+      border-radius: 20px;
+      background: #fff;
+      display: block;
+      position: absolute;
+      margin-top: -55px;
+      margin-left: 115px;
+      z-index: 10; }
+    .cngPromo .windmillSection .fan:after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #555;
+      border-radius: 10px;
+      margin-left: 5px;
+      margin-top: 5px;
+      z-index: 11; }
+    .cngPromo .windmillSection .slow {
+      -webkit-animation: spinning-cogs 5s infinite linear;
+      -moz-animation: spinning-cogs 5s infinite linear;
+      -ms-animation: spinning-cogs 5s infinite linear;
+      -o-animation: spinning-cogs 5s infinite linear;
+      animation: spinning-cogs 5s infinite linear;
+      transition: all ease 1s; }
+@-webkit-keyframes spinning-cogs {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@-moz-keyframes spinning-cogs {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-o-keyframes spinning-cogs {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(360deg); } }
+@keyframes spinning-cogs {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+    .cngPromo .windmillSection .line {
+      width: 5px;
+      height: 350px;
+      background: #fff;
+      position: absolute;
+      margin-top: -163px;
+      margin-left: 10px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+    .cngPromo .windmillSection .line:after {
+      content: "";
+      width: 5px;
+      height: 119px;
+      background: #fff;
+      position: absolute;
+      margin-top: -90px;
+      margin-left: 48px;
+      box-shadow: -95px 0px 0px #fff; }
+    .cngPromo .windmillSection .line:before {
+      content: "";
+      width: 5px;
+      height: 119px;
+      background: #fff;
+      position: absolute;
+      margin-top: -5px;
+      margin-left: 48px;
+      box-shadow: -95px 0px 0px #fff; }
+    .cngPromo .windmillSection .line li {
+      width: 5px;
+      height: 91px;
+      background: #fff;
+      position: relative;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      margin-bottom: -72px;
+      margin-top: -48px; }
+    .cngPromo .windmillSection .line li:nth-child(8) {
+      margin-top: 103px; }
+    .cngPromo .windmillSection .lines {
+      width: 5px;
+      height: 350px;
+      background: #fff;
+      position: absolute;
+      margin-top: -163px;
+      margin-left: 10px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
+    .cngPromo .windmillSection .lines:after {
+      content: "";
+      width: 5px;
+      height: 119px;
+      background: #fff;
+      position: absolute;
+      margin-top: -90px;
+      margin-left: 48px;
+      box-shadow: -95px 0px 0px #fff; }
+    .cngPromo .windmillSection .lines:before {
+      content: "";
+      width: 5px;
+      height: 119px;
+      background: #fff;
+      position: absolute;
+      margin-top: -5px;
+      margin-left: 48px;
+      box-shadow: -95px 0px 0px #fff; }
+    .cngPromo .windmillSection .lines li {
+      width: 5px;
+      height: 91px;
+      background: #fff;
+      position: relative;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      margin-bottom: -72px;
+      margin-top: -48px; }
+    .cngPromo .windmillSection .lines li:nth-child(8) {
+      margin-top: 103px; }
+    @media screen and (max-width: 500px) {
+      .cngPromo .windmillSection {
+        display: none; } }
+  .cngPromo .bar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    background: #30563f; }
+    .cngPromo .bar > div {
+      float: left;
+      color: #fff;
+      text-align: center; }
+      .cngPromo .bar > div.name {
+        width: 35%;
+        background: #30563f;
+        padding: 7px 15px; }
+        @media screen and (max-width: 800px) {
+          .cngPromo .bar > div.name {
+            width: 100%;
+            float: none; } }
+      .cngPromo .bar > div.dateLoc {
+        width: 35%; }
+        .cngPromo .bar > div.dateLoc .date {
+          width: 60%;
+          padding: 7px 15px;
+          background: #c3933c;
+          float: left; }
+        .cngPromo .bar > div.dateLoc .location {
+          width: 40%;
+          float: left;
+          background: #be5734;
+          padding: 7px 15px; }
+        @media screen and (max-width: 800px) {
+          .cngPromo .bar > div.dateLoc {
+            width: 100%;
+            float: none; } }
+      .cngPromo .bar > div.countdown {
+        width: 30%;
+        padding: 7px 15px;
+        background: #8f2a2d; }
+        @media screen and (max-width: 800px) {
+          .cngPromo .bar > div.countdown {
+            width: 100%;
+            float: none; } }
+    @media screen and (max-width: 800px) {
+      .cngPromo .bar {
+        height: 120px;
+        bottom: -80px; } }
+    @media screen and (max-width: 500px) {
+      .cngPromo .bar {
+        height: 120px;
+        position: relative;
+        bottom: auto; } }
+  .cngPromo .system {
+    position: relative;
+    padding-top: 150px;
+    float: right;
+    width: 200px;
+    text-align: right; }
+    @media screen and (max-width: 500px) {
+      .cngPromo .system {
+        display: none; } }
+    .cngPromo .system .mac {
+      width: 200px;
+      height: 150px;
+      position: relative;
+      margin: auto; }
+      .cngPromo .system .mac .backscreen {
+        background: #A58B8B;
+        width: 200px;
+        height: 150px;
+        padding: 15px 0;
+        border-radius: 7px;
+        z-index: 999; }
+      .cngPromo .system .mac .screen {
+        background: #111;
+        width: 175px;
+        height: 90px;
+        margin: auto;
+        color: #fff;
+        text-align: left;
+        padding: 5px;
+        font-size: 13px; }
+        .cngPromo .system .mac .screen .rerun {
+          margin: 10px auto;
+          display: block;
+          padding: 5px 10px;
+          border-radius: 0;
+          background: #e67e22;
+          border: 0;
+          display: none; }
+      .cngPromo .system .mac .bottom {
+        width: 200px;
+        height: 30px;
+        background: #D8D8D8;
+        position: absolute;
+        bottom: 0;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px; }
+        .cngPromo .system .mac .bottom .button {
+          width: 10px;
+          height: 10px;
+          background: #000;
+          position: absolute;
+          border-radius: 10px;
+          bottom: 50%;
+          left: 50%;
+          margin-left: -5px;
+          margin-bottom: -5px; }
+      .cngPromo .system .mac .stand {
+        width: 40px;
+        height: 100px;
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        margin-left: -20px;
+        background: #8f2a2d; }
+  .cngPromo .india-roads {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    /*styles for car*/ }
+    @media screen and (max-width: 500px) {
+      .cngPromo .india-roads {
+        display: none; } }
+    .cngPromo .india-roads .street {
+      height: 40px;
+      width: 102%;
+      position: absolute;
+      bottom: 0; }
+    .cngPromo .india-roads .car {
+      position: absolute;
+      bottom: 66px;
+      right: 15%;
+      z-index: 10;
+      transform: scaleX(-1); }
+      .cngPromo .india-roads .car.moveF {
+        -moz-animation: forward 4s linear;
+        -webkit-animation: forward 4s linear; }
+      .cngPromo .india-roads .car.moveB {
+        -moz-animation: backward 4s linear;
+        -webkit-animation: backward 4s linear; }
+      .cngPromo .india-roads .car.stopAtWindMill {
+        right: 70%; }
+        @media screen and (max-width: 800px) {
+          .cngPromo .india-roads .car.stopAtWindMill {
+            right: 70%; } }
+@-moz-keyframes forward {
+  0% {
+    right: 15%; }
+  100% {
+    right: 70%; } }
+@-webkit-keyframes forward {
+  0% {
+    right: 15%; }
+  100% {
+    right: 70%; } }
+@-moz-keyframes backward {
+  0% {
+    right: 70%; }
+  100% {
+    right: 15%; } }
+@-webkit-keyframes backward {
+  0% {
+    right: 70%; }
+  100% {
+    right: 15%; } }
+    .cngPromo .india-roads .tyre {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #3f3f40;
+      position: absolute;
+      z-index: 2;
+      left: 3px;
+      top: 20px; }
+      .cngPromo .india-roads .tyre.moveF {
+        -moz-animation: tyre-rotate-f 1s infinite linear;
+        -webkit-animation: tyre-rotate-f 1s infinite linear; }
+      .cngPromo .india-roads .tyre.moveB {
+        -moz-animation: tyre-rotate-b 1s infinite linear;
+        -webkit-animation: tyre-rotate-b 1s infinite linear; }
+@-moz-keyframes tyre-rotate-f {
+  from {
+    -moz-transform: rotate(-360deg); }
+  to {
+    -moz-transform: rotate(0deg); } }
+@-webkit-keyframes tyre-rotate-f {
+  from {
+    -webkit-transform: rotate(-360deg); }
+  to {
+    -webkit-transform: rotate(0deg); } }
+@-moz-keyframes tyre-rotate-b {
+  from {
+    -moz-transform: rotate(360deg); }
+  to {
+    -moz-transform: rotate(0deg); } }
+@-webkit-keyframes tyre-rotate-b {
+  from {
+    -webkit-transform: rotate(360deg); }
+  to {
+    -webkit-transform: rotate(0deg); } }
+    .cngPromo .india-roads .tyre:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #bdc2bd;
+      position: absolute;
+      top: 5px;
+      left: 5px; }
+    .cngPromo .india-roads .gap {
+      background: #3f3f40;
+      width: 2px;
+      height: 4px;
+      position: absolute;
+      left: 14px;
+      top: 8px;
+      box-shadow: 0 9px 0 #3f3f40; }
+    .cngPromo .india-roads .gap:before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 4px;
+      position: absolute;
+      background: #3f3f40;
+      box-shadow: 0 12px 0 #3f3f40;
+      -webkit-transform: rotate(-90deg);
+      -webkit-transform-origin: 0 7px;
+      -moz-transform: rotate(-90deg);
+      -moz-transform-origin: 0 7px;
+      z-index: 3; }
+    .cngPromo .india-roads .car-base {
+      position: absolute;
+      display: block;
+      width: 125px;
+      height: 30px;
+      background: #000000;
+      border-radius: 10% 10% 50% 50% / 60% 100% 20% 10%;
+      -webkit-transform: rotate(-2deg);
+      -moz-transform: rotate(-2deg);
+      border: solid;
+      border-color: #000000; }
+    .cngPromo .india-roads .back-bonet {
+      background: #4c4b4b;
+      border-radius: 54% 25% 0 0;
+      height: 22px;
+      left: 11px;
+      position: absolute;
+      top: 8px;
+      width: 40px; }
+    .cngPromo .india-roads .tyre.front {
+      left: 90px; }
+    .cngPromo .india-roads .car-body {
+      /*width:125px;
+      height:24px;
+      background:#d1352b;
+      border-top:1px solid #a82e27;*/
+      border-bottom: 24px solid #d1352b;
+      height: 0;
+      top: 10px;
+      width: 120px;
+      position: relative; }
+    .cngPromo .india-roads .car-body:before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 24px;
+      position: absolute;
+      right: -5px;
+      background: #d1352b;
+      border-top-right-radius: 4px;
+      z-index: 1; }
+    .cngPromo .india-roads .car-body:after {
+      content: '';
+      display: inline-block;
+      width: 121px;
+      border-bottom: 1px solid #942b25;
+      border-right: 2px solid transparent;
+      height: 0;
+      z-index: 2;
+      position: absolute; }
+    .cngPromo .india-roads .car-gate {
+      width: 32px;
+      height: 20px;
+      background: #d1352b;
+      border-radius: 0 0 2px 8px / 0 0 2px 8px;
+      box-shadow: 0 0 0 1px #892924;
+      position: absolute;
+      left: 48px; }
+    .cngPromo .india-roads .car-gate:before {
+      content: '';
+      width: 8px;
+      height: 2px;
+      background: #4c4b4b;
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+    .cngPromo .india-roads .car-top-back {
+      background: none repeat scroll 0 0 #4C4B4B;
+      border-radius: 5px 0 0 0;
+      height: 20px;
+      left: 4px;
+      position: absolute;
+      top: -20px;
+      width: 58px; }
+    .cngPromo .india-roads .car-top-back:before {
+      width: 30px;
+      height: 15px;
+      background: #736f6f;
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 8px;
+      border-radius: 2px; }
+    .cngPromo .india-roads .car-top-back:after {
+      content: '';
+      background: #4c4b4b;
+      border-radius: 30%;
+      height: 5px;
+      left: 3px;
+      position: absolute;
+      top: -1px;
+      width: 62px; }
+    .cngPromo .india-roads .car-top-front {
+      top: -19px;
+      position: absolute;
+      left: 47px;
+      width: 20px;
+      height: 20px;
+      background: #dc4630;
+      border-left: 1px solid #892924;
+      border-radius: 2px 0 0 0; }
+    .cngPromo .india-roads .car-top-front:after {
+      width: 26px;
+      height: 20px;
+      -webkit-transform: skew(37deg);
+      -moz-transform: skew(37deg);
+      background: #dc4630;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 6px;
+      border-radius: 4px 0 4px 4px; }
+    .cngPromo .india-roads .car-top-front:before {
+      width: 12px;
+      height: 5px;
+      background: #dc4630;
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 28px;
+      z-index: 1;
+      border: solid #a82e27;
+      border-width: 0 1px 1px 0; }
+    .cngPromo .india-roads .wind-sheild {
+      top: 3px;
+      left: 3px;
+      position: absolute;
+      z-index: 3;
+      width: 18px;
+      height: 12px;
+      background: #f5e7e7;
+      border-radius: 0 3px 0 0; }
+    .cngPromo .india-roads .wind-sheild:after {
+      width: 12px;
+      height: 12px;
+      -webkit-transform: skew(25deg);
+      -moz-transform: skew(25deg);
+      background: #f5e7e7;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10px;
+      border-radius: 3px; }
+    .cngPromo .india-roads .boundary-tyre-cover {
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      border-bottom: 20px solid #4c4b4b;
+      border-right: 10px solid transparent;
+      height: 0;
+      width: 20px; }
+    .cngPromo .india-roads .boundary-tyre-cover:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background: #4c4b4b;
+      height: 20px;
+      width: 15px;
+      -webkit-transform: skewX(-20deg);
+      -moz-transform: skewX(-20deg);
+      border-radius: 3px;
+      left: -6px;
+      top: 0; }
+    .cngPromo .india-roads .boundary-tyre-cover:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background: #4c4b4b;
+      height: 20px;
+      width: 20px;
+      -webkit-transform: skewx(40deg);
+      -moz-transform: skewX(40deg);
+      border-radius: 3px;
+      right: -14px;
+      top: 0; }
+    .cngPromo .india-roads .boundary-tyre-cover-inner {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border-bottom: 16px solid black;
+      border-right: 10px solid transparent;
+      height: 0;
+      width: 15px;
+      z-index: 2; }
+    .cngPromo .india-roads .boundary-tyre-cover-inner:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background: black;
+      height: 16px;
+      width: 15px;
+      -webkit-transform: skewX(-20deg);
+      -moz-transform: skewX(-20deg);
+      border-radius: 3px 3px 0 0;
+      left: -6px;
+      top: 0; }
+    .cngPromo .india-roads .boundary-tyre-cover-inner:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background: black;
+      height: 16px;
+      width: 20px;
+      -webkit-transform: skewx(40deg);
+      -moz-transform: skewX(40deg);
+      border-radius: 3px 3px 0 0;
+      right: -11px;
+      top: 0; }
+    .cngPromo .india-roads .boundary-tyre-cover-back-bottom {
+      position: absolute;
+      width: 14px;
+      height: 8px;
+      background: #4c4b4b;
+      top: 12px;
+      left: -19px; }
+    .cngPromo .india-roads .bonet-front {
+      background: #d1352b;
+      border-radius: 5px 258px 0 38px / 36px 50px 0 0;
+      height: 4px;
+      position: absolute;
+      right: 0;
+      top: -4px;
+      width: 40px;
+      z-index: 0; }
+    .cngPromo .india-roads .back-curve {
+      background: none repeat scroll 0 0 #4C4B4B;
+      border-radius: 960% 100% 0 0;
+      height: 20px;
+      left: -3px;
+      position: absolute;
+      top: 1px;
+      transform: rotate(6deg);
+      width: 5px; }
+    .cngPromo .india-roads .stepney {
+      height: 6px;
+      left: -4px;
+      position: absolute;
+      top: 6px;
+      width: 8px;
+      z-index: -1;
+      background: #3f3f40; }
+    .cngPromo .india-roads .stepney:before {
+      width: 8px;
+      height: 12px;
+      background: #3f3f40;
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -7px;
+      border-radius: 3px 3px 0 0; }
+    .cngPromo .india-roads .stepney:after {
+      width: 8px;
+      height: 12px;
+      background: #0d0c0d;
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -7px;
+      border-radius: 0 0 3px 3px; }
+    .cngPromo .india-roads .tyre-cover-front {
+      background: #4c4b4b;
+      height: 4px;
+      left: 97px;
+      position: absolute;
+      top: 13px;
+      width: 22px;
+      z-index: 1; }
+    .cngPromo .india-roads .tyre-cover-front:before {
+      background: none repeat scroll 0 0 #4c4b4b;
+      content: "";
+      display: inline-block;
+      height: 21px;
+      left: -10px;
+      position: absolute;
+      top: 0;
+      transform: skewX(-30deg);
+      width: 10px;
+      z-index: 6;
+      border-radius: 4px 0 0 0; }
+    .cngPromo .india-roads .tyre-cover-front:after {
+      background: none repeat scroll 0 0 #4c4b4b;
+      content: "";
+      display: inline-block;
+      height: 6px;
+      left: 14px;
+      position: absolute;
+      top: 0;
+      transform: skewX(30deg);
+      width: 17px;
+      z-index: 6;
+      border-radius: 0 4px 2px 0; }
+    .cngPromo .india-roads .boundary-tyre-cover-inner-front {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border-bottom: 16px solid black;
+      border-right: 10px solid transparent;
+      height: 0;
+      width: 15px;
+      z-index: 7; }
+    .cngPromo .india-roads .boundary-tyre-cover-inner-front:before {
+      background: none repeat scroll 0 0 #000000;
+      border-radius: 3px 3px 0 0;
+      content: "";
+      display: inline-block;
+      height: 17px;
+      left: -10px;
+      position: absolute;
+      top: 0;
+      transform: skewX(-30deg);
+      width: 15px; }
+    .cngPromo .india-roads .boundary-tyre-cover-inner-front:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background: black;
+      height: 16px;
+      width: 20px;
+      -webkit-transform: skewx(25deg);
+      -moz-transform: skewX(25deg);
+      border-radius: 3px 3px 0 0;
+      right: -12px;
+      top: 0; }
+    .cngPromo .india-roads .base-axcel {
+      background: none repeat scroll 0 0 black;
+      bottom: -15px;
+      height: 10px;
+      left: 30px;
+      position: absolute;
+      transform: rotate(-2deg);
+      width: 70px;
+      z-index: -1; }
+    .cngPromo .india-roads .base-axcel:before {
+      background: none repeat scroll 0 0 black;
+      border-radius: 0 0 0 10px / 0 0 0 5px;
+      content: "";
+      height: 10px;
+      left: -35px;
+      position: absolute;
+      top: -2px;
+      transform: rotate(6deg);
+      width: 30px; }
+    .cngPromo .india-roads .base-axcel:after {
+      background: none repeat scroll 0 0 black;
+      border-radius: 0 0 0 10px / 0 0 0 5px;
+      content: "";
+      height: 10px;
+      right: -33px;
+      position: absolute;
+      top: -1px;
+      transform: rotate(-4deg);
+      width: 40px;
+      border-radius: 0 10px 5px 0; }
+    .cngPromo .india-roads .front-bumper {
+      background: none repeat scroll 0 0 #4c4b4b;
+      border-radius: 0 2px 2px 0;
+      height: 8px;
+      position: absolute;
+      right: -15px;
+      width: 11px;
+      z-index: 1;
+      -moz-transform: rotate(-5deg);
+      -webkit-transform: rotate(-5deg); }
+    .cngPromo .india-roads .front-bumper:before {
+      background: none repeat scroll 0 0 #000000;
+      content: "";
+      height: 10px;
+      left: -7px;
+      position: absolute;
+      transform: rotate(-22deg);
+      width: 9px;
+      z-index: 1; }
+    .cngPromo .india-roads .car-shadow {
+      background: none repeat scroll 0 0 transparent;
+      bottom: -15px;
+      box-shadow: -5px 10px 15px 3px #000000;
+      left: -7px;
+      position: absolute;
+      width: 136px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,39 @@
+$primaryFont        : Monda;
+
+$themeWhite         : #fff;
+
+$grad1              : #111;
+$grad2              : #092350;
+$grad3              : #091050;
+$grad4              : #221;
+
+
+$themeGreen         : rgb(48,86,63);
+$themeOrange        : rgb(195,147,60);
+$themeDarkOrange    : rgb(190,87,52);
+$themeRed           : rgb(143,42,45);
+$themeBackground    : rgb(38,46,43);
+$themeCream         : rgb(229,222,184);
+
+$carAnimeSpeed      : 4s;
+
+$mobile             : 500px;
+$tablet             : 800px;
+$ipad               : 1024px;
+
+@mixin rotate($deg){
+    -ms-transform: rotate($deg); /* IE 9 */
+     -moz-transform: rotate($deg); /* MOz */
+    -webkit-transform: rotate($deg); /* Safari */
+    transform: rotate($deg);
+}
+
+@mixin scale($scaleX, $scaleY){
+    -ms-transform: scale($scaleX, $scaleY); /* IE 9 */
+    -webkit-transform: scale($scaleX, $scaleY); /* Safari */
+    transform: scale($scaleX, $scaleY);
+}
+
+@mixin clearFloat{
+    width: 100%; float: none;
+}

@@ -1,0 +1,199 @@
+section#timeline {
+    width: 66%;
+    margin: 200px 0 20px;
+    position: relative;
+    float: right;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin: -135px 0 0 -3px;
+        width: 3px;
+        height: 118.1%;
+        background: #506B86;
+        
+         @media screen and (max-width: $tablet){
+             height: 85%;
+             margin-top:0;
+         }
+         @media screen and (max-width: $mobile){
+             margin:0;
+             right: 30px;
+             left: auto;
+             height: 95%;
+         }
+    }
+    article {
+        width: 100%;
+        margin: -100px 0 25px 0;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        @media screen and (max-width: $mobile){
+            margin:0 0 10px 0;
+        }
+    }
+    &:after{
+        position: absolute;
+        content: 'TIMELINE';
+        top: -184px;
+        right: 0px;
+        font-size: 30px;
+        color: #fff;
+        border-bottom: 3px solid #506B86;
+        width: 50%;
+        text-align: right;
+        @media screen and (max-width: $tablet){
+             width: 100%;
+             border-bottom:0;
+             top: -70px;
+        }
+    }
+    
+    @media screen and (max-width: $ipad){
+        width: 55%;
+    }
+    @media screen and (max-width: $tablet){
+         @include clearFloat;
+    }
+    @media screen and (max-width: $mobile){
+        @include clearFloat;
+        margin: 100px 0 20px;
+    }
+}
+section#timeline article div.inner {
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 0;
+    min-height: 150px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    font-size: 11px;
+     @media screen and (max-width: $mobile){
+         width: 75%;
+     }
+}
+section#timeline article div.inner span.date {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -32px;
+    text-transform: uppercase;
+    background: #25303B;
+    color: rgba(255,255,255,0.8);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    @media screen and (max-width: $mobile){
+        right: 0;
+        left: auto;   
+    }
+}
+section#timeline article div.inner span.date span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    &.month{
+        font-size: 18px;
+    }
+}
+section#timeline article div.inner h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    line-height: 22px;
+    font-size: 18px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -25px;
+        width: 20px; 
+        height: 20px;
+        -webkit-transform: rotate(-45deg);
+    }
+}
+section#timeline article div.inner{
+    h3{
+       margin-bottom:15px;
+       font-weight: 200; 
+    }
+    ul{
+        li{
+            padding-left: 20px;
+            position: relative;
+            &:before{
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                content: '\f0a4';
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+            }
+        }
+    }
+}
+section#timeline article:nth-child(2n+2) div.inner {
+    float: right;
+    @media screen and (max-width: $mobile){
+        float: left;
+    }
+}
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -25px;
+  @media screen and (max-width: $mobile){
+        left: auto;
+  }
+}
+section#timeline article:nth-child(1) div.inner{
+  background: $themeGreen;
+}
+section#timeline article:nth-child(1) div.inner h2:after {
+  background:  $themeGreen;
+}
+section#timeline article:nth-child(2) div.inner{
+  background: $themeRed;
+}
+section#timeline article:nth-child(2) div.inner h2:after {
+  background: $themeRed;
+}
+section#timeline article:nth-child(3) div.inner{
+  background: $themeOrange;
+}
+section#timeline article:nth-child(3) div.inner h2:after {
+  background: $themeOrange;
+}
+section#timeline article:nth-child(4) div.inner{
+  background: $themeDarkOrange;
+}
+section#timeline article:nth-child(4) div.inner h2:after {
+  background: $themeDarkOrange;
+}
+section#timeline article:nth-child(5) div.inner{
+  background: #884F31;
+}
+section#timeline article:nth-child(5) div.inner h2:after {
+  background: #884F31;
+}
+section#timeline article:nth-child(7) div.inner{
+  background: #4E4433;
+}
+section#timeline article:nth-child(7) div.inner h2:after {
+  background: #4E4433;
+}
+
+section#timeline article:nth-child(6) div.inner{
+  background: #B5676D;
+}
+section#timeline article:nth-child(6) div.inner h2:after {
+  background: #B5676D;
+}
